@@ -31,9 +31,9 @@ export class MainContentComponent implements OnInit {
                private dialog: MatDialog               
                ) {
     this.formAddEmpleado = this.fb.group({
-      nombre: ['', Validators.required],
-      apellido: ['', Validators.required],
-      puesto: ['', Validators.required],
+      nombre: ['', Validators.minLength(3), Validators.required],
+      apellido: ['', Validators.minLength(3), Validators.required],
+      puesto: ['', Validators.minLength(3),Validators.required],
       fechaInicio: ['', Validators.required]
     });
    }
