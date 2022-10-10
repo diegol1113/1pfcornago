@@ -7,7 +7,9 @@ import { LatMenuComponent } from './components/lat-menu/lat-menu.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-import { DialogFormComponent } from './components/dialog-form/dialog-form.component'
+import { DialogFormComponent } from './components/dialog-form/dialog-form.component';
+import { TitulosDirectiveDirective } from './directives/titulos-directive.directive';
+import { SoloInicialPipe } from './pipe/solo-inicial.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { DialogFormComponent } from './components/dialog-form/dialog-form.compon
     ToolbarComponent,
     LatMenuComponent,
     MainContentComponent,
-    DialogFormComponent
+    DialogFormComponent,
+    TitulosDirectiveDirective,
+    SoloInicialPipe
   ],
   imports: [
     BrowserModule,

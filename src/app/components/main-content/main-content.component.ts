@@ -18,6 +18,7 @@ import { DialogFormComponent } from '../dialog-form/dialog-form.component';
   styleUrls: ['./main-content.component.css']
 })
 export class MainContentComponent implements OnInit {
+  nombre: string = ''
   formAddEmpleado!: FormGroup;
   listaEmpleados: Empleado[] = [];
   displayedColumns: string[] = ['nombre', 'apellido', 'puesto', 'fechaInicio', 'acciones'];
