@@ -1,0 +1,32 @@
+<div class="ancho mt-4">
+    <h2 class="text-danger">Estas editando la info de este empleado</h2>
+    <mat-drawer-container class="example-container" autosize>
+      <div class="example-sidenav-content item-aling-start">
+          <form [formGroup]="formAddEmpleado" class="m-3">
+              <mat-form-field appearance="outline" class="ms-2 anchoInput">
+              <mat-label>Nombre</mat-label>
+              <input matInput placeholder="Nombre del empleado" formControlName="nombre" autocomplete="off" class="">
+              </mat-form-field>
+          
+              <mat-form-field appearance="outline" class="ms-2 anchoInput" >
+              <mat-label>Apellido</mat-label>
+              <input matInput placeholder="Apellido del empleado" formControlName="apellido" autocomplete="off">
+              </mat-form-field>
+          
+              <mat-form-field appearance="outline" class="ms-2 anchoInput">
+              <mat-label>Puesto</mat-label>
+              <input matInput placeholder="Puesto del empleado" formControlName="puesto" autocomplete="off">
+              </mat-form-field>
+          
+              <mat-form-field appearance="outline" class="ms-2 anchoInput">
+              <mat-label>Fecha inicio Act.</mat-label>
+              <input matInput [matDatepicker]="picker" formControlName="fechaInicio">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+  
+              <button [disabled]="formAddEmpleado.invalid" mat-raised-button type="submit" color="primary" class="ms-2 p-2 ps-4 pe-4 anchoInput" (click)="editEmpleado()">Edit Empleado</button>
+          </form>
+      </div>
+  </mat-drawer-container>
+  </div>

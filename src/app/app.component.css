@@ -1,0 +1,18 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header  header  header  header  header  header'
+    'latMenu   main    main    main    main    main    main';
+  }
+  
+  .grid-header{
+    grid-area: header;
+  }
+  
+  .grid-latMenu{
+    grid-area: latMenu;
+  }
+  
+  .grid-mainContent{
+    grid-area: main;
+  }
